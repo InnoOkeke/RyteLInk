@@ -27,23 +27,40 @@ faqItems.forEach(item => {
     });
 });
 
-// Reveal on scroll
-const reveal = () => {
-    const reveals = document.querySelectorAll('.reveal');
-    reveals.forEach(element => {
-        const windowHeight = window.innerHeight;
-        const elementTop = element.getBoundingClientRect().top;
-        const elementVisible = 150;
-        
-        if (elementTop < windowHeight - elementVisible) {
-            element.classList.add('active');
-        }
-    });
+// Reveal on scroll using Intersection Observer
+const observerOptions = {
+    threshold: 0.15,
+    rootMargin: '0px 0px -50px 0px'
 };
 
-window.addEventListener('scroll', reveal);
-// Initial check
-reveal();
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Advanced Parallax Effect
+document.addEventListener('mousemove', (e) => {
+    const targets = document.querySelectorAll('.parallax-target');
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    targets.forEach(target => {
+        const rect = target.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        const moveX = (mouseX - centerX) / 25;
+        const moveY = (mouseY - centerY) / 25;
+
+        target.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+    });
+});
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
