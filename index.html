@@ -8,6 +8,7 @@
     <meta name="keywords" content="Rytelink, financial investment, global product sourcing, free bank transfers, high yield ROI, business advisory, risk management, Africa fintech">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
 <body>
 
@@ -27,30 +28,51 @@
             <div class="nav-cta">
                 <a href="#" class="btn btn-primary">Join Rytelink</a>
             </div>
+            <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="nav-mobile" id="navMobile">
+            <ul>
+                <li><a href="#payments">Payments</a></li>
+                <li><a href="#investments">Investments</a></li>
+                <li><a href="#marketplace">Marketplace</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#" class="btn btn-primary" style="margin-top: 8px;">Join Rytelink</a></li>
+            </ul>
         </div>
     </nav>
 
     <section class="hero">
         <div class="fun-blob" style="top: 10%; right: -5%;"></div>
         <div class="fun-blob" style="bottom: 10%; left: -5%; background: var(--secondary); opacity: 0.2;"></div>
+        <div class="geometric-shape"></div>
+        <div class="geometric-shape"></div>
+        <div class="geometric-shape"></div>
+        <div class="premium-border"></div>
         <div class="container">
             <div class="hero-content reveal">
-                <span class="feature-tag">We are here for you…</span>
-                <h1 style="color: var(--text-main);">Financial <span style="color: var(--primary);">Freedom</span>, Built Around <span style="color: var(--primary);">You</span>.</h1>
+                <span class="feature-tag" style="color: #000; background: rgba(0,0,0,0.06); border-color: rgba(0,0,0,0.1);">We are here for you…</span>
+                <h1>Financial Freedom, Built Around You.</h1>
                 <p>Start your journey to financial freedom today. Open a free Rytelink account to enjoy unlimited free transfers, virtual cards, and smart ways to grow your savings globally.</p>
-                <div class="nav-cta">
-                    <div class="app-badges" style="display: flex; gap: 10px; align-items: center;">
-                        <a href="#" class="btn" style="background: #000; color: #fff; padding: 12px 24px;">
-                            <i class="fab fa-apple" style="font-size: 1.2rem; margin-right: 8px;"></i> App Store
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary btn-lg">
+                        <i class="fas fa-rocket"></i> Get Started Free
+                    </a>
+                    <div class="app-badges">
+                        <a href="#" class="btn btn-outline">
+                            <i class="fab fa-apple"></i> App Store
                         </a>
-                        <a href="#" class="btn" style="background: #000; color: #fff; padding: 12px 24px;">
-                            <i class="fab fa-google-play" style="font-size: 1.1rem; margin-right: 8px;"></i> Play Store
+                        <a href="#" class="btn btn-outline">
+                            <i class="fab fa-google-play"></i> Play Store
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="hero-image reveal" style="transition-delay: 0.3s;">
-                <div class="mockup-container parallax-target">
+            <div class="hero-image reveal">
+                <div class="mockup-container">
                     <img src="assets/3963095.jpg" alt="Rytelink Financial Freedom Illustration">
                 </div>
             </div>
@@ -87,95 +109,339 @@
     </section>
 
     <!-- Payments Section -->
-    <section id="payments" class="section" style="position: relative;">
-        <div class="container grid-2">
-            <div class="feature-image reveal" style="transition-delay: 0.2s;">
-                <div class="creative-image-container parallax-target">
-                    <img src="assets/19199291.jpg" alt="Secure Instant Payments">
+    <section id="payments" class="section payments-section">
+        <!-- Animated background grid -->
+        <div class="payments-grid-bg"></div>
+        <!-- Glowing orbs -->
+        <div class="payments-orb payments-orb-1"></div>
+        <div class="payments-orb payments-orb-2"></div>
+
+        <div class="container payments-layout">
+            <!-- Left: Image with floating cards -->
+            <div class="payments-visual reveal">
+                <div class="payments-image-wrap">
+                    <img src="assets/19199291.jpg" alt="Secure Instant Payments" class="payments-main-img">
+                    <!-- Floating stat cards -->
+                    <div class="pay-card pay-card-top">
+                        <div class="pay-card-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="pay-card-info">
+                            <span class="pay-card-value">0.3s</span>
+                            <span class="pay-card-label">Transfer Speed</span>
+                        </div>
+                    </div>
+                    <div class="pay-card pay-card-bottom">
+                        <div class="pay-card-icon pay-card-icon-green"><i class="fas fa-shield-alt"></i></div>
+                        <div class="pay-card-info">
+                            <span class="pay-card-value">₦0 Fee</span>
+                            <span class="pay-card-label">Always Free</span>
+                        </div>
+                    </div>
+                    <!-- Pulse ring -->
+                    <div class="pay-pulse-ring"></div>
                 </div>
             </div>
-            <div class="feature-content reveal">
-                <span class="feature-tag">Payments & Lifestyle</span>
-                <h2 class="section-title">Send & Receive <span style="color: var(--primary);">Money</span> in Seconds</h2>
+
+            <!-- Right: Content -->
+            <div class="payments-content reveal">
+                <div class="section-eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    <span>Payments &amp; Lifestyle</span>
+                </div>
+                <h2 class="section-title payments-title">
+                    Send &amp; Receive <br>
+                    <span class="payments-highlight">Money</span> in Seconds
+                </h2>
                 <p class="section-text">Sending money should be effortless. With Rytelink, you can move funds to any bank or wallet instantly, with total transparency and zero hidden fees.</p>
-                <ul class="feature-list">
-                    <li><i class="fas fa-check-circle" style="color: var(--primary);"></i> <strong>Unlimited Free Transfers</strong> to all banks</li>
-                    <li><i class="fas fa-bolt" style="color: var(--primary);"></i> Instant airtime and data top-ups</li>
-                    <li><i class="fas fa-gift" style="color: var(--primary);"></i> Earn exclusive cashback on every transaction</li>
-                </ul>
-                <a href="#" class="btn btn-primary">Start Sending Money</a>
+
+                <div class="payments-features">
+                    <div class="pay-feature-item">
+                        <div class="pay-feature-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="pay-feature-text">
+                            <strong>Unlimited Free Transfers</strong>
+                            <span>Send to any bank, anytime, zero charges</span>
+                        </div>
+                    </div>
+                    <div class="pay-feature-item">
+                        <div class="pay-feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="pay-feature-text">
+                            <strong>Instant Top-Ups</strong>
+                            <span>Airtime and data in under a second</span>
+                        </div>
+                    </div>
+                    <div class="pay-feature-item">
+                        <div class="pay-feature-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="pay-feature-text">
+                            <strong>Exclusive Cashback</strong>
+                            <span>Earn rewards on every transaction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn payments-cta-btn">
+                    <span>Start Sending Money</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Investments Section -->
-    <section id="investments" class="section section-alt" style="position: relative; overflow: hidden;">
-        <div class="fun-blob" style="top: 20%; right: -150px; opacity: 0.1; width: 450px; height: 450px;"></div>
-        <div class="container grid-2">
-            <div class="feature-content reveal">
-                <span class="feature-tag">Wealth Management</span>
-                <h2 class="section-title">Make Your <span style="color: var(--primary);">Money</span> Work Harder</h2>
-                <p class="section-text">Your money should grow as fast as you do. Rytelink provides secure, high-yield opportunities to build your wealth with confidence.</p>
-                <ul class="feature-list">
-                    <li><i class="fas fa-chart-line" style="color: var(--primary);"></i> Earn up to <strong>15% ROI</strong> in 3 months</li>
-                    <li><i class="fas fa-shield-alt" style="color: var(--primary);"></i> 100% Secure & Insured by partners</li>
-                    <li><i class="fas fa-piggy-bank" style="color: var(--primary);"></i> Personalized risk management advice</li>
-                </ul>
-                <a href="#" class="btn btn-primary">Start Investing Now</a>
+    <section id="investments" class="section wealth-section">
+        <!-- Dark premium background -->
+        <div class="wealth-bg"></div>
+        <!-- Animated ticker tape -->
+        <div class="wealth-ticker-wrap">
+            <div class="wealth-ticker">
+                <span>ROI 15%</span><span class="ticker-sep">◆</span>
+                <span>SECURE</span><span class="ticker-sep">◆</span>
+                <span>3 MONTHS</span><span class="ticker-sep">◆</span>
+                <span>INSURED</span><span class="ticker-sep">◆</span>
+                <span>HIGH YIELD</span><span class="ticker-sep">◆</span>
+                <span>ROI 15%</span><span class="ticker-sep">◆</span>
+                <span>SECURE</span><span class="ticker-sep">◆</span>
+                <span>3 MONTHS</span><span class="ticker-sep">◆</span>
+                <span>INSURED</span><span class="ticker-sep">◆</span>
+                <span>HIGH YIELD</span><span class="ticker-sep">◆</span>
             </div>
-            <div class="feature-image reveal" style="transition-delay: 0.2s;">
-                <div class="creative-image-container">
-                    <img src="assets/invest.svg" alt="Rytelink Investment ROI">
+        </div>
+
+        <div class="container wealth-layout">
+            <!-- Left: Visual -->
+            <div class="wealth-visual reveal">
+                <!-- ROI Meter -->
+                <div class="roi-meter" style="margin-bottom: 1.5rem;">
+                    <div class="roi-meter-label">
+                        <span>Annual Return</span>
+                        <span class="roi-meter-value">15% ROI</span>
+                    </div>
+                    <div class="roi-meter-track">
+                        <div class="roi-meter-fill"></div>
+                    </div>
+                    <div class="roi-meter-compare">
+                        <span>vs. avg. savings 3.5%</span>
+                        <span class="roi-badge">4× More</span>
+                    </div>
                 </div>
+                <div class="wealth-chart-card">
+                    <!-- Simulated chart bars -->
+                    <div class="chart-header">
+                        <span class="chart-title">Portfolio Growth</span>
+                        <span class="chart-trend">
+                            <i class="fas fa-arrow-trend-up"></i> +15%
+                        </span>
+                    </div>
+                    <div class="chart-bars">
+                        <div class="chart-bar-wrap">
+                            <div class="chart-bar" style="--bar-h: 40%;"></div>
+                            <span>Jan</span>
+                        </div>
+                        <div class="chart-bar-wrap">
+                            <div class="chart-bar" style="--bar-h: 55%;"></div>
+                            <span>Feb</span>
+                        </div>
+                        <div class="chart-bar-wrap">
+                            <div class="chart-bar" style="--bar-h: 70%;"></div>
+                            <span>Mar</span>
+                        </div>
+                        <div class="chart-bar-wrap">
+                            <div class="chart-bar" style="--bar-h: 60%;"></div>
+                            <span>Apr</span>
+                        </div>
+                        <div class="chart-bar-wrap">
+                            <div class="chart-bar" style="--bar-h: 85%;"></div>
+                            <span>May</span>
+                        </div>
+                        <div class="chart-bar-wrap">
+                            <div class="chart-bar chart-bar-active" style="--bar-h: 100%;"></div>
+                            <span>Jun</span>
+                        </div>
+                    </div>
+                    <div class="chart-footer">
+                        <div class="chart-stat">
+                            <span class="chart-stat-val">+15%</span>
+                            <span class="chart-stat-lbl">Total Return</span>
+                        </div>
+                        <div class="chart-stat">
+                            <span class="chart-stat-val">₦0</span>
+                            <span class="chart-stat-lbl">Hidden Fees</span>
+                        </div>
+                        <div class="chart-stat">
+                            <span class="chart-stat-val">100%</span>
+                            <span class="chart-stat-lbl">Insured</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Floating badge -->
+                <div class="wealth-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Top Rated</span>
+                </div>
+            </div>
+
+            <!-- Right: Content -->
+            <div class="wealth-content reveal">
+                <div class="section-eyebrow section-eyebrow-gold">
+                    <span class="eyebrow-dot eyebrow-dot-gold"></span>
+                    <span>Wealth Management</span>
+                </div>
+                <h2 class="section-title wealth-title">
+                    Make Your <span class="wealth-highlight">Money</span><br>Work Harder
+                </h2>
+                <p class="section-text wealth-text">Your money should grow as fast as you do. Rytelink provides secure, high-yield opportunities to build your wealth with confidence.</p>
+
+                <div class="wealth-features">
+                    <div class="wealth-feature-item">
+                        <div class="wealth-feature-icon"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <strong>Up to 15% ROI</strong>
+                            <span>Earn in just 3 months</span>
+                        </div>
+                    </div>
+                    <div class="wealth-feature-item">
+                        <div class="wealth-feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div>
+                            <strong>100% Secure &amp; Insured</strong>
+                            <span>Protected by trusted partners</span>
+                        </div>
+                    </div>
+                    <div class="wealth-feature-item">
+                        <div class="wealth-feature-icon"><i class="fas fa-piggy-bank"></i></div>
+                        <div>
+                            <strong>Personalized Advice</strong>
+                            <span>Risk management tailored to you</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn wealth-cta-btn">
+                    <span>Start Investing Now</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Marketplace Section -->
-    <section id="marketplace" class="section" style="position: relative;">
-        <div class="fun-blob" style="bottom: -100px; right: -100px; opacity: 0.15; width: 500px; height: 500px; background: var(--secondary);"></div>
-        <div class="container grid-2">
-            <div class="feature-image reveal" style="transition-delay: 0.2s;">
-                <div class="creative-image-container parallax-target">
-                    <img src="assets/wealth.svg" alt="Global Sourcing & Marketplace">
+    <section id="marketplace" class="section global-section">
+        <!-- World map dot pattern bg -->
+        <div class="global-map-bg"></div>
+        <!-- Floating globe rings -->
+        <div class="globe-ring globe-ring-1"></div>
+        <div class="globe-ring globe-ring-2"></div>
+        <div class="globe-ring globe-ring-3"></div>
+
+        <div class="container global-layout">
+            <!-- Left: Visual -->
+            <div class="global-visual reveal">
+                <div class="global-image-wrap">
+                    <img src="assets/wealth.svg" alt="Global Sourcing & Marketplace" class="global-main-img">
+                    <!-- Floating destination pins -->
+                    <div class="global-pin global-pin-1">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>USA</span>
+                    </div>
+                    <div class="global-pin global-pin-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>UK</span>
+                    </div>
+                    <div class="global-pin global-pin-3">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>China</span>
+                    </div>
+                    <!-- Delivery badge -->
+                    <div class="global-delivery-badge">
+                        <div class="delivery-icon"><i class="fas fa-shipping-fast"></i></div>
+                        <div class="delivery-info">
+                            <span class="delivery-val">Ultra-Fast</span>
+                            <span class="delivery-lbl">Worldwide Delivery</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="feature-content reveal">
-                <span class="feature-tag">Global Sourcing</span>
-                <h2 class="section-title">Shop the <span style="color: var(--primary);">World</span> from Your Phone</h2>
+
+            <!-- Right: Content -->
+            <div class="global-content reveal">
+                <div class="section-eyebrow section-eyebrow-teal">
+                    <span class="eyebrow-dot eyebrow-dot-teal"></span>
+                    <span>Global Sourcing</span>
+                </div>
+                <h2 class="section-title global-title">
+                    Shop the <span class="global-highlight">World</span><br>from Your Phone
+                </h2>
                 <p class="section-text">Get direct access to global products and a world-class digital library. We bridge the gap between you and the international marketplace.</p>
-                <ul class="feature-list">
-                    <li><i class="fas fa-shopping-bag" style="color: var(--primary);"></i> <strong>Ultra-fast delivery</strong> on global products</li>
-                    <li><i class="fas fa-book-open" style="color: var(--primary);"></i> Over 7,000+ top global publications</li>
-                    <li><i class="fas fa-globe" style="color: var(--primary);"></i> Access journals, newspapers, and magazines</li>
-                </ul>
-                <a href="#" class="btn btn-primary">Browse Marketplace</a>
+
+                <div class="global-features">
+                    <div class="global-feature-item">
+                        <div class="global-feature-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <div>
+                            <strong>Ultra-Fast Delivery</strong>
+                            <span>Global products at your doorstep</span>
+                        </div>
+                    </div>
+                    <div class="global-feature-item">
+                        <div class="global-feature-icon"><i class="fas fa-book-open"></i></div>
+                        <div>
+                            <strong>Premium Content</strong>
+                            <span>Access to top global publications</span>
+                        </div>
+                    </div>
+                    <div class="global-feature-item">
+                        <div class="global-feature-icon"><i class="fas fa-globe"></i></div>
+                        <div>
+                            <strong>Worldwide Access</strong>
+                            <span>Newspapers, magazines &amp; more</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn global-cta-btn">
+                    <span>Browse Marketplace</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Security Section -->
     <section id="security" class="security-banner">
-        <div class="container reveal">
-            <span class="feature-tag" style="color: var(--secondary);">Your Security Comes First</span>
-            <h2 class="section-title" style="color: var(--primary);">SAFETY & SECURITY</h2>
-            <p style="max-width: 600px; margin: 0 auto 40px; color: #ccc;">Your peace of mind is our top priority. We use advanced protection and round-the-clock security to make sure your money and data are always safe.</p>
-            
-            <div class="security-grid">
-                <div class="security-item">
-                    <i class="fas fa-user-shield"></i>
-                    <h3>Advanced Protection</h3>
-                    <p style="color: #999; margin-top: 10px;">Military-grade fraud protection systems.</p>
+        <div class="security-inner">
+            <div class="container">
+                <div class="security-header reveal">
+                    <span class="security-eyebrow">
+                        <span class="security-eyebrow-dot"></span>
+                        Your Security Comes First
+                    </span>
+                    <h2 class="security-title">Safety &amp; Security</h2>
+                    <p class="security-subtitle">Your peace of mind is our top priority. We use advanced protection and round-the-clock security to make sure your money and data are always safe.</p>
                 </div>
-                <div class="security-item">
-                    <i class="fas fa-lock"></i>
-                    <h3>Rigorous Security</h3>
-                    <p style="color: #999; margin-top: 10px;">Multiple layers of authentication and safety.</p>
-                </div>
-                <div class="security-item">
-                    <i class="fas fa-headset"></i>
-                    <h3>24/7 Support</h3>
-                    <p style="color: #999; margin-top: 10px;">Dedicated In-App support team always ready.</p>
+                <div class="security-grid reveal">
+                    <div class="security-item">
+                        <div class="security-icon-wrap">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Advanced Protection</h3>
+                        <p>Military-grade fraud protection systems keeping your funds safe at all times.</p>
+                    </div>
+                    <div class="security-item">
+                        <div class="security-icon-wrap">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Rigorous Security</h3>
+                        <p>Multiple layers of authentication and end-to-end encryption on every transaction.</p>
+                    </div>
+                    <div class="security-item">
+                        <div class="security-icon-wrap">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Dedicated in-app support team always ready to resolve any issue instantly.</p>
+                    </div>
                 </div>
             </div>
         </div>

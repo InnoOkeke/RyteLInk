@@ -8,6 +8,23 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Hamburger menu toggle
+const hamburger = document.getElementById('navHamburger');
+const mobileMenu = document.getElementById('navMobile');
+if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        mobileMenu.classList.toggle('open');
+    });
+    // Close on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('open');
+            mobileMenu.classList.remove('open');
+        });
+    });
+}
+
 // FAQ Accordion
 const faqItems = document.querySelectorAll('.faq-item');
 faqItems.forEach(item => {
@@ -29,8 +46,8 @@ faqItems.forEach(item => {
 
 // Reveal on scroll using Intersection Observer
 const observerOptions = {
-    threshold: 0.15,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0,
+    rootMargin: '0px 0px 0px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
