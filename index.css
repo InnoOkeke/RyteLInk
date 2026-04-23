@@ -2403,6 +2403,7 @@ footer {
     /* Global */
     .global-layout { grid-template-columns: 1fr !important; gap: 3rem; }
     .global-title { font-size: 2.8rem; }
+    .globe-ring { display: none; }
 
     /* Security */
     .security-grid { grid-template-columns: 1fr 1fr !important; gap: 1rem; }
@@ -2423,6 +2424,8 @@ footer {
     /* Hero */
     .hero { padding: 120px 0 60px; }
     .hero-image { display: none; }
+    .hero .fun-blob { display: none; }
+    .hero .geometric-shape { display: none; }
     .hero-content h1 { font-size: 2.2rem; }
     .hero-content p { font-size: 1.05rem; }
     .hero-buttons .btn-primary { padding: 14px 28px; font-size: 1rem; }
@@ -2432,22 +2435,30 @@ footer {
     .vision-section { padding: 80px 0 !important; }
     .vision-heading { font-size: 2rem !important; }
     .vision-text-grid { grid-template-columns: 1fr !important; gap: 16px; }
+    .vision-section .parallax-target { display: none; }
+    .vision-section .fun-blob { display: none; }
 
     /* Payments */
     .payments-layout { grid-template-columns: 1fr !important; }
     .payments-title { font-size: 2.2rem; }
-    .pay-card-top { right: 0; }
-    .pay-card-bottom { left: 0; }
+    .pay-card-top { display: none; }
+    .pay-card-bottom { display: none; }
+    .pay-pulse-ring { display: none; }
 
     /* Wealth */
     .wealth-layout { grid-template-columns: 1fr !important; }
     .wealth-title { font-size: 2.2rem; }
     .wealth-ticker-wrap { height: 44px; }
     .wealth-ticker { font-size: 0.95rem; }
+    .wealth-badge { display: none; }
+    .wealth-bg { display: none; }
 
     /* Global */
     .global-layout { grid-template-columns: 1fr !important; }
     .global-title { font-size: 2.2rem; }
+    .globe-ring { display: none; }
+    .global-pin { display: none; }
+    .global-delivery-badge { display: none; }
 
     /* Security */
     .security-grid { grid-template-columns: 1fr !important; }
