@@ -8,7 +8,7 @@
     <meta name="keywords" content="Rytelink, financial investment, global product sourcing, free bank transfers, high yield ROI, business advisory, risk management, Africa fintech">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="icon" type="image/png" href="assets/icon.png">
 </head>
 <body>
 
@@ -16,17 +16,19 @@
     <nav id="navbar">
         <div class="container">
             <a href="#" class="logo">
-                <img src="assets/logo-nobg.png" alt="Rytelink Logo">
+                <img src="assets/logo-mg.png" alt="Rytelink Logo">
             </a>
             <ul class="nav-links">
                 <li><a href="#payments">Payments</a></li>
                 <li><a href="#investments">Investments</a></li>
                 <li><a href="#marketplace">Marketplace</a></li>
+                <li><a href="#econtents">E-Contents</a></li>
+                <li><a href="#airports">Airports</a></li>
                 <li><a href="#security">Security</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
             <div class="nav-cta">
-                <a href="#" class="btn btn-primary">Join Rytelink</a>
+                <a href="#" class="btn btn-nav-cta">Join Rytelink</a>
             </div>
             <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
                 <span></span><span></span><span></span>
@@ -38,9 +40,11 @@
                 <li><a href="#payments">Payments</a></li>
                 <li><a href="#investments">Investments</a></li>
                 <li><a href="#marketplace">Marketplace</a></li>
+                <li><a href="#econtents">E-Contents</a></li>
+                <li><a href="#airports">Airports</a></li>
                 <li><a href="#security">Security</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <li><a href="#" class="btn btn-primary" style="margin-top: 8px;">Join Rytelink</a></li>
+                <li><a href="#" class="btn btn-nav-cta" style="margin-top: 8px;">Join Rytelink</a></li>
             </ul>
         </div>
     </nav>
@@ -54,18 +58,17 @@
         <div class="premium-border"></div>
         <div class="container">
             <div class="hero-content reveal">
-                <span class="feature-tag hero-tag">✦ We are here for you…</span>
                 <h1>Financial Freedom, Built Around You.</h1>
                 <p>Start your journey to financial freedom today. Open a free Rytelink account to enjoy unlimited free transfers, virtual cards, and smart ways to grow your savings globally.</p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary btn-lg">
-                        <i class="fas fa-rocket"></i> Get Started Free
+                    <a href="#" class="btn btn-hero-primary">
+                        Get Started Free <i class="fas fa-arrow-right"></i>
                     </a>
                     <div class="app-badges">
-                        <a href="#" class="btn btn-outline">
+                        <a href="#" class="btn btn-hero-outline">
                             <i class="fab fa-apple"></i> App Store
                         </a>
-                        <a href="#" class="btn btn-outline">
+                        <a href="#" class="btn btn-hero-outline">
                             <i class="fab fa-google-play"></i> Play Store
                         </a>
                     </div>
@@ -73,14 +76,133 @@
             </div>
             <div class="hero-image reveal">
                 <div class="mockup-container">
-                    <img src="assets/3963095.jpg" alt="Rytelink Financial Freedom Illustration">
+                    <!-- SVG: hero-dashboard -->
+                    <svg viewBox="0 0 480 400" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" aria-label="Rytelink fintech dashboard illustration">
+                        <defs>
+                            <radialGradient id="heroGlow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="rgba(255,107,0,0.25)"/>
+                                <stop offset="100%" stop-color="rgba(255,107,0,0)"/>
+                            </radialGradient>
+                            <radialGradient id="screenGlow" cx="50%" cy="30%" r="60%">
+                                <stop offset="0%" stop-color="rgba(255,107,0,0.12)"/>
+                                <stop offset="100%" stop-color="rgba(10,10,15,0)"/>
+                            </radialGradient>
+                            <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#FF6B00"/>
+                                <stop offset="100%" stop-color="#E66000"/>
+                            </linearGradient>
+                            <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#1A1A26"/>
+                                <stop offset="100%" stop-color="#12121A"/>
+                            </linearGradient>
+                            <filter id="softGlow">
+                                <feGaussianBlur stdDeviation="4" result="blur"/>
+                                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                            </filter>
+                        </defs>
+
+                        <!-- Background glow -->
+                        <circle cx="240" cy="200" r="200" fill="url(#heroGlow)" opacity="0.6"/>
+
+                        <!-- Arc decoration lines -->
+                        <path d="M 60 320 Q 240 80 420 320" stroke="rgba(255,107,0,0.15)" stroke-width="1.5" fill="none"/>
+                        <path d="M 80 340 Q 240 100 400 340" stroke="rgba(255,107,0,0.1)" stroke-width="1" fill="none"/>
+                        <path d="M 40 300 Q 240 60 440 300" stroke="rgba(255,107,0,0.08)" stroke-width="1" fill="none"/>
+
+                        <!-- Phone frame -->
+                        <rect x="120" y="30" width="200" height="340" rx="28" ry="28" fill="#1A1A26" stroke="#FF6B00" stroke-width="2"/>
+                        <!-- Phone notch -->
+                        <rect x="185" y="38" width="70" height="12" rx="6" fill="#0A0A0F"/>
+                        <!-- Screen area -->
+                        <rect x="128" y="58" width="184" height="304" rx="4" fill="url(#screenGlow)"/>
+
+                        <!-- Status bar dots -->
+                        <circle cx="148" cy="68" r="3" fill="rgba(240,240,245,0.3)"/>
+                        <circle cx="158" cy="68" r="3" fill="rgba(240,240,245,0.3)"/>
+                        <circle cx="168" cy="68" r="3" fill="rgba(240,240,245,0.3)"/>
+                        <rect x="278" y="64" width="24" height="8" rx="2" fill="rgba(240,240,245,0.2)"/>
+
+                        <!-- Balance label -->
+                        <text x="220" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="rgba(240,240,245,0.55)" font-weight="500">Total Balance</text>
+                        <!-- Balance amount -->
+                        <text x="220" y="122" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" fill="#F0F0F5" font-weight="800">&#8358; 248,500</text>
+                        <!-- Balance sub -->
+                        <text x="220" y="138" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.9)" font-weight="600">+15.2% this month</text>
+
+                        <!-- Divider -->
+                        <line x1="140" y1="150" x2="300" y2="150" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+                        <!-- Chart label -->
+                        <text x="148" y="168" font-family="Inter,sans-serif" font-size="9" fill="rgba(240,240,245,0.55)" font-weight="600">Portfolio Growth</text>
+                        <text x="292" y="168" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#ffffff" font-weight="700">+15%</text>
+
+                        <!-- Bar chart bars -->
+                        <rect x="150" y="218" width="18" height="30" rx="3" fill="rgba(255,107,0,0.3)"/>
+                        <rect x="174" y="208" width="18" height="40" rx="3" fill="rgba(255,107,0,0.3)"/>
+                        <rect x="198" y="198" width="18" height="50" rx="3" fill="rgba(255,107,0,0.3)"/>
+                        <rect x="222" y="205" width="18" height="43" rx="3" fill="rgba(255,107,0,0.3)"/>
+                        <rect x="246" y="190" width="18" height="58" rx="3" fill="rgba(255,107,0,0.5)"/>
+                        <rect x="270" y="178" width="18" height="70" rx="3" fill="url(#barGrad)" filter="url(#softGlow)"/>
+
+                        <!-- Month labels -->
+                        <text x="159" y="258" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="rgba(240,240,245,0.4)">Jan</text>
+                        <text x="183" y="258" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="rgba(240,240,245,0.4)">Feb</text>
+                        <text x="207" y="258" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="rgba(240,240,245,0.4)">Mar</text>
+                        <text x="231" y="258" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="rgba(240,240,245,0.4)">Apr</text>
+                        <text x="255" y="258" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="rgba(240,240,245,0.4)">May</text>
+                        <text x="279" y="258" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#FF6B00" font-weight="700">Jun</text>
+
+                        <!-- Bottom divider -->
+                        <line x1="140" y1="268" x2="300" y2="268" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+                        <!-- Quick action buttons -->
+                        <rect x="148" y="278" width="44" height="28" rx="8" fill="rgba(255,107,0,0.12)" stroke="rgba(255,107,0,0.2)" stroke-width="1"/>
+                        <text x="170" y="296" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ffffff" font-weight="600">Send</text>
+
+                        <rect x="198" y="278" width="44" height="28" rx="8" fill="rgba(255,107,0,0.12)" stroke="rgba(255,107,0,0.2)" stroke-width="1"/>
+                        <text x="220" y="296" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ffffff" font-weight="600">Invest</text>
+
+                        <rect x="248" y="278" width="44" height="28" rx="8" fill="rgba(255,107,0,0.12)" stroke="rgba(255,107,0,0.2)" stroke-width="1"/>
+                        <text x="270" y="296" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#ffffff" font-weight="600">Save</text>
+
+                        <!-- Home indicator -->
+                        <rect x="195" y="352" width="50" height="4" rx="2" fill="rgba(240,240,245,0.3)"/>
+
+                        <!-- Floating card element -->
+                        <rect x="310" y="100" width="140" height="80" rx="16" fill="url(#cardGrad)" stroke="#FF6B00" stroke-width="1.5" opacity="0.95"/>
+                        <!-- Card glow -->
+                        <rect x="310" y="100" width="140" height="80" rx="16" fill="rgba(255,107,0,0.15)" opacity="0.4"/>
+                        <!-- Card chip -->
+                        <rect x="324" y="116" width="20" height="16" rx="3" fill="#F0F0F5" opacity="0.8"/>
+                        <line x1="324" y1="124" x2="344" y2="124" stroke="#1A1A26" stroke-width="1"/>
+                        <line x1="334" y1="116" x2="334" y2="132" stroke="#1A1A26" stroke-width="1"/>
+                        <!-- Card number dots -->
+                        <circle cx="324" cy="148" r="2.5" fill="rgba(240,240,245,0.6)"/>
+                        <circle cx="332" cy="148" r="2.5" fill="rgba(240,240,245,0.6)"/>
+                        <circle cx="340" cy="148" r="2.5" fill="rgba(240,240,245,0.6)"/>
+                        <circle cx="348" cy="148" r="2.5" fill="rgba(240,240,245,0.6)"/>
+                        <text x="380" y="152" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="rgba(240,240,245,0.7)">4821</text>
+                        <!-- Card label -->
+                        <text x="380" y="120" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="rgba(240,240,245,0.5)">RYTELINK</text>
+                        <text x="380" y="132" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#ffffff" font-weight="700">Virtual Card</text>
+
+                        <!-- Second floating element: ROI badge -->
+                        <rect x="320" y="210" width="120" height="60" rx="14" fill="#1A1A26" stroke="rgba(255,107,0,0.3)" stroke-width="1"/>
+                        <text x="380" y="232" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="rgba(240,240,245,0.55)">Annual Return</text>
+                        <text x="380" y="252" text-anchor="middle" font-family="Inter,sans-serif" font-size="18" fill="#ffffff" font-weight="800">15% ROI</text>
+
+                        <!-- Connection dots -->
+                        <circle cx="310" cy="140" r="4" fill="#FF6B00" opacity="0.8"/>
+                        <circle cx="320" cy="240" r="4" fill="#FF6B00" opacity="0.6"/>
+                        <line x1="310" y1="140" x2="320" y2="240" stroke="rgba(255,107,0,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+                    </svg>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Intro (Vision Section) -->
-    <section class="section section-alt overflow-hidden vision-section">
+    <section class="section-alt overflow-hidden vision-section" style="padding: 5rem 0 2rem; position: relative;">
         <div class="fun-blob" style="top: -10%; left: 30%; opacity: 0.1; width: 600px; height: 600px;"></div>
         
         <!-- Stylish Floating Elements -->
@@ -90,26 +212,20 @@
 
         <div class="container">
             <div class="vision-content reveal">
-                <div class="vision-tag-wrapper">
-                    <span class="feature-tag vision-tag">OUR VISION</span>
-                </div>
-                <h2 class="section-title vision-heading">
-                    Your Trusted Partner in <span style="color: var(--primary);">Wealth</span> & <span style="color: var(--primary);">Global Trade</span>
+                <h2 class="text-center" style="max-width: 900px; margin: 0 auto; font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 600; line-height: 1.4; color: #111;">
+                    &ldquo;Empowering your success with secure financial investments, seamless global product sourcing, and expert business advisory across the continent.&rdquo;
                 </h2>
-                <div class="vision-text-grid">
-                    <p class="section-text vision-text-item vision-text-orange">
-                        Rytelink is a premier provider of financial investment, global product sourcing, and business advisory solutions. We empower our clients with the tools they need to succeed in a global economy.
-                    </p>
-                    <p class="section-text vision-text-item vision-text-black">
-                        Whether you're looking to manage your money better or shop the world, Rytelink is here to help you reach your goals and discover new opportunities across the continent.
-                    </p>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Payments Section -->
-    <section id="payments" class="section payments-section">
+    <section id="payments" class="section payments-section" style="padding-top: 2rem;">
+        <!-- Sector Title -->
+        <div class="container" style="text-align: center; margin-bottom: 4rem; position: relative; z-index: 10;">
+            <h2 style="font-size: 1.5rem; font-weight: 800; color: #111; letter-spacing: 3px; text-transform: uppercase;">SOLUTIONS</h2>
+        </div>
+
         <!-- Animated background grid -->
         <div class="payments-grid-bg"></div>
         <!-- Glowing orbs -->
@@ -120,22 +236,87 @@
             <!-- Left: Image with floating cards -->
             <div class="payments-visual reveal">
                 <div class="payments-image-wrap">
-                    <img src="assets/19199291.jpg" alt="Secure Instant Payments" class="payments-main-img">
-                    <!-- Floating stat cards -->
-                    <div class="pay-card pay-card-top">
-                        <div class="pay-card-icon"><i class="fas fa-bolt"></i></div>
-                        <div class="pay-card-info">
-                            <span class="pay-card-value">0.3s</span>
-                            <span class="pay-card-label">Transfer Speed</span>
-                        </div>
-                    </div>
-                    <div class="pay-card pay-card-bottom">
-                        <div class="pay-card-icon pay-card-icon-green"><i class="fas fa-shield-alt"></i></div>
-                        <div class="pay-card-info">
-                            <span class="pay-card-value">₦0 Fee</span>
-                            <span class="pay-card-label">Always Free</span>
-                        </div>
-                    </div>
+                    <!-- SVG: payments-transfer -->
+                    <svg viewBox="0 0 480 360" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" aria-label="Rytelink payment card transfer illustration">
+                        <defs>
+                            <radialGradient id="payGlow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="rgba(255,107,0,0.2)"/>
+                                <stop offset="100%" stop-color="rgba(255,107,0,0)"/>
+                            </radialGradient>
+                            <linearGradient id="card1Grad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#1A1A26"/>
+                                <stop offset="100%" stop-color="#12121A"/>
+                            </linearGradient>
+                            <linearGradient id="card2Grad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#1A1A26"/>
+                                <stop offset="100%" stop-color="#0A0A0F"/>
+                            </linearGradient>
+                            <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+                                <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.5)"/>
+                            </filter>
+                        </defs>
+
+                        <!-- Background glow -->
+                        <circle cx="240" cy="180" r="160" fill="url(#payGlow)" opacity="0.7"/>
+
+                        <!-- Back card (rotated -6deg) -->
+                        <g transform="rotate(-6, 240, 180)">
+                            <rect x="80" y="80" width="280" height="170" rx="20" fill="url(#card2Grad)" filter="url(#cardShadow)"/>
+                            <!-- Back card stripe -->
+                            <rect x="80" y="130" width="280" height="40" fill="rgba(255,255,255,0.05)"/>
+                            <!-- Back card dots -->
+                            <circle cx="120" cy="220" r="3" fill="rgba(240,240,245,0.2)"/>
+                            <circle cx="132" cy="220" r="3" fill="rgba(240,240,245,0.2)"/>
+                            <circle cx="144" cy="220" r="3" fill="rgba(240,240,245,0.2)"/>
+                            <circle cx="156" cy="220" r="3" fill="rgba(240,240,245,0.2)"/>
+                        </g>
+
+                        <!-- Front card -->
+                        <rect x="100" y="100" width="280" height="170" rx="20" fill="url(#card1Grad)" stroke="#FF6B00" stroke-width="2" filter="url(#cardShadow)"/>
+
+                        <!-- Card top accent line -->
+                        <rect x="100" y="100" width="280" height="4" rx="2" fill="#FF6B00" opacity="0.8"/>
+
+                        <!-- Chip -->
+                        <rect x="124" y="130" width="32" height="26" rx="5" fill="#F0F0F5" opacity="0.85"/>
+                        <line x1="124" y1="143" x2="156" y2="143" stroke="#1A1A26" stroke-width="1.5"/>
+                        <line x1="140" y1="130" x2="140" y2="156" stroke="#1A1A26" stroke-width="1.5"/>
+                        <rect x="128" y="134" width="10" height="8" rx="1" fill="rgba(255,107,0,0.4)"/>
+                        <rect x="142" y="134" width="10" height="8" rx="1" fill="rgba(255,107,0,0.4)"/>
+
+                        <!-- Contactless waves -->
+                        <path d="M 172 136 Q 180 143 172 150" stroke="#F0F0F5" stroke-width="2" fill="none" opacity="0.7" stroke-linecap="round"/>
+                        <path d="M 178 130 Q 190 143 178 156" stroke="#F0F0F5" stroke-width="2" fill="none" opacity="0.5" stroke-linecap="round"/>
+                        <path d="M 184 124 Q 200 143 184 162" stroke="#F0F0F5" stroke-width="1.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+
+                        <!-- Card brand label -->
+                        <text x="370" y="130" text-anchor="end" font-family="Inter,sans-serif" font-size="11" fill="rgba(240,240,245,0.5)" font-weight="600" letter-spacing="2">RYTELINK</text>
+
+                        <!-- Card number -->
+                        <text x="124" y="200" font-family="Inter,sans-serif" font-size="14" fill="rgba(240,240,245,0.8)" font-weight="600" letter-spacing="3">**** **** **** 4821</text>
+
+                        <!-- Card holder & expiry -->
+                        <text x="124" y="225" font-family="Inter,sans-serif" font-size="10" fill="rgba(240,240,245,0.45)" font-weight="500">CARD HOLDER</text>
+                        <text x="124" y="240" font-family="Inter,sans-serif" font-size="11" fill="rgba(240,240,245,0.75)" font-weight="600">JOHN ADEYEMI</text>
+                        <text x="320" y="225" font-family="Inter,sans-serif" font-size="10" fill="rgba(240,240,245,0.45)" font-weight="500">EXPIRES</text>
+                        <text x="320" y="240" font-family="Inter,sans-serif" font-size="11" fill="rgba(240,240,245,0.75)" font-weight="600">12/28</text>
+
+                        <!-- Transfer arrow -->
+                        <circle cx="240" cy="310" r="28" fill="rgba(255,107,0,0.15)" stroke="rgba(255,107,0,0.3)" stroke-width="1.5"/>
+                        <circle cx="240" cy="310" r="20" fill="#FF6B00"/>
+                        <!-- Arrow right -->
+                        <path d="M 230 310 L 248 310 M 242 303 L 250 310 L 242 317" stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+                        <!-- Transfer labels -->
+                        <text x="160" y="315" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="rgba(240,240,245,0.55)" font-weight="500">From</text>
+                        <text x="160" y="330" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#F0F0F5" font-weight="700">&#8358; 50,000</text>
+                        <text x="320" y="315" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="rgba(240,240,245,0.55)" font-weight="500">To</text>
+                        <text x="320" y="330" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#ffffff" font-weight="700">Instant</text>
+
+                        <!-- Speed badge -->
+                        <rect x="190" y="340" width="100" height="18" rx="9" fill="rgba(255,107,0,0.1)" stroke="rgba(255,107,0,0.2)" stroke-width="1"/>
+                        <text x="240" y="353" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#ffffff" font-weight="600">0.3s Transfer Speed</text>
+                    </svg>
                     <!-- Pulse ring -->
                     <div class="pay-pulse-ring"></div>
                 </div>
@@ -196,20 +377,6 @@
         <!-- Dark premium background -->
         <div class="wealth-bg"></div>
         <!-- Animated ticker tape -->
-        <div class="wealth-ticker-wrap">
-            <div class="wealth-ticker">
-                <span>ROI 15%</span><span class="ticker-sep">◆</span>
-                <span>SECURE</span><span class="ticker-sep">◆</span>
-                <span>3 MONTHS</span><span class="ticker-sep">◆</span>
-                <span>INSURED</span><span class="ticker-sep">◆</span>
-                <span>HIGH YIELD</span><span class="ticker-sep">◆</span>
-                <span>ROI 15%</span><span class="ticker-sep">◆</span>
-                <span>SECURE</span><span class="ticker-sep">◆</span>
-                <span>3 MONTHS</span><span class="ticker-sep">◆</span>
-                <span>INSURED</span><span class="ticker-sep">◆</span>
-                <span>HIGH YIELD</span><span class="ticker-sep">◆</span>
-            </div>
-        </div>
 
         <div class="container wealth-layout">
             <!-- Left: Visual -->
@@ -225,7 +392,7 @@
                     </div>
                     <div class="roi-meter-compare">
                         <span>vs. avg. savings 3.5%</span>
-                        <span class="roi-badge">4× More</span>
+                        <span class="roi-badge">4x More</span>
                     </div>
                 </div>
                 <div class="wealth-chart-card">
@@ -268,7 +435,7 @@
                             <span class="chart-stat-lbl">Total Return</span>
                         </div>
                         <div class="chart-stat">
-                            <span class="chart-stat-val">₦0</span>
+                            <span class="chart-stat-val">&#8358;0</span>
                             <span class="chart-stat-lbl">Hidden Fees</span>
                         </div>
                         <div class="chart-stat">
@@ -340,20 +507,82 @@
             <!-- Left: Visual -->
             <div class="global-visual reveal">
                 <div class="global-image-wrap">
-                    <img src="assets/wealth.svg" alt="Global Sourcing & Marketplace" class="global-main-img">
-                    <!-- Floating destination pins -->
-                    <div class="global-pin global-pin-1">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>USA</span>
-                    </div>
-                    <div class="global-pin global-pin-2">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>UK</span>
-                    </div>
-                    <div class="global-pin global-pin-3">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>China</span>
-                    </div>
+                    <!-- SVG: marketplace-globe -->
+                    <svg viewBox="0 0 480 400" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" aria-label="Rytelink global marketplace globe illustration">
+                        <defs>
+                            <radialGradient id="globeGlow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="rgba(255,107,0,0.12)"/>
+                                <stop offset="60%" stop-color="rgba(255,107,0,0.04)"/>
+                                <stop offset="100%" stop-color="rgba(255,107,0,0)"/>
+                            </radialGradient>
+                            <linearGradient id="globeGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stop-color="#1A1A26"/>
+                                <stop offset="100%" stop-color="#0A0A0F"/>
+                            </linearGradient>
+                            <filter id="globeShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="rgba(0,0,0,0.4)"/>
+                            </filter>
+                            <filter id="pinGlow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+
+                        <!-- Background glow -->
+                        <circle cx="240" cy="200" r="180" fill="url(#globeGlow)" opacity="0.8"/>
+
+                        <!-- Globe base -->
+                        <circle cx="240" cy="200" r="120" fill="url(#globeGrad)" stroke="#FF6B00" stroke-width="2" filter="url(#globeShadow)"/>
+
+                        <!-- Globe grid lines -->
+                        <ellipse cx="240" cy="200" rx="120" ry="60" fill="none" stroke="rgba(255,107,0,0.2)" stroke-width="1"/>
+                        <ellipse cx="240" cy="200" rx="120" ry="30" fill="none" stroke="rgba(255,107,0,0.15)" stroke-width="1"/>
+                        <ellipse cx="240" cy="200" rx="60" ry="120" fill="none" stroke="rgba(255,107,0,0.15)" stroke-width="1"/>
+                        <ellipse cx="240" cy="200" rx="30" ry="120" fill="none" stroke="rgba(255,107,0,0.1)" stroke-width="1"/>
+                        <line x1="120" y1="200" x2="360" y2="200" stroke="rgba(255,107,0,0.15)" stroke-width="1"/>
+                        <line x1="240" y1="80" x2="240" y2="320" stroke="rgba(255,107,0,0.15)" stroke-width="1"/>
+
+                        <!-- Pins on globe -->
+                        <g filter="url(#pinGlow)">
+                            <line x1="175" y1="148" x2="175" y2="168" stroke="#FF6B00" stroke-width="2"/>
+                            <circle cx="175" cy="141" r="10" fill="#FF6B00"/>
+                            <circle cx="175" cy="141" r="6" fill="#1A1A26"/>
+                            <circle cx="175" cy="141" r="3" fill="#FF6B00"/>
+                            <circle cx="175" cy="168" r="4" fill="rgba(255,107,0,0.3)"/>
+                        </g>
+                        <rect x="137" y="113" width="76" height="22" rx="6" fill="#1A1A26" stroke="rgba(255,107,0,0.4)" stroke-width="1"/>
+                        <text x="175" y="128" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#ffffff" font-weight="700">USA</text>
+                        <!-- Pin: UK -->
+                        <g filter="url(#pinGlow)">
+                            <line x1="305" y1="128" x2="305" y2="148" stroke="#FF6B00" stroke-width="2"/>
+                            <circle cx="305" cy="121" r="10" fill="#FF6B00"/>
+                            <circle cx="305" cy="121" r="6" fill="#1A1A26"/>
+                            <circle cx="305" cy="121" r="3" fill="#FF6B00"/>
+                            <circle cx="305" cy="148" r="4" fill="rgba(255,107,0,0.3)"/>
+                        </g>
+                        <rect x="278" y="128" width="64" height="22" rx="6" fill="#1A1A26" stroke="rgba(255,107,0,0.4)" stroke-width="1"/>
+                        <text x="310" y="143" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#ffffff" font-weight="700">UK</text>
+                        <!-- Pin: China -->
+                        <g filter="url(#pinGlow)">
+                            <line x1="220" y1="250" x2="220" y2="270" stroke="#FF6B00" stroke-width="2"/>
+                            <circle cx="220" cy="243" r="10" fill="#FF6B00"/>
+                            <circle cx="220" cy="243" r="6" fill="#1A1A26"/>
+                            <circle cx="220" cy="243" r="3" fill="#FF6B00"/>
+                            <circle cx="220" cy="270" r="4" fill="rgba(255,107,0,0.3)"/>
+                        </g>
+                        <rect x="182" y="213" width="76" height="22" rx="6" fill="#1A1A26" stroke="rgba(255,107,0,0.4)" stroke-width="1"/>
+                        <text x="220" y="228" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" fill="#ffffff" font-weight="700">China</text>
+                        <!-- Decorative ring pulses -->
+                        <circle cx="175" cy="148" r="18" fill="none" stroke="rgba(255,107,0,0.15)" stroke-width="1"/>
+                        <circle cx="310" cy="158" r="18" fill="none" stroke="rgba(255,107,0,0.15)" stroke-width="1"/>
+                        <circle cx="220" cy="243" r="18" fill="none" stroke="rgba(255,107,0,0.15)" stroke-width="1"/>
+                        <!-- Globe ring decorations -->
+                        <circle cx="240" cy="200" r="170" fill="none" stroke="rgba(255,107,0,0.06)" stroke-width="1.5"/>
+                        <circle cx="240" cy="200" r="185" fill="none" stroke="rgba(255,107,0,0.04)" stroke-width="1"/>
+                    </svg>
                     <!-- Delivery badge -->
                     <div class="global-delivery-badge">
                         <div class="delivery-icon"><i class="fas fa-shipping-fast"></i></div>
@@ -385,17 +614,17 @@
                         </div>
                     </div>
                     <div class="global-feature-item">
-                        <div class="global-feature-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="global-feature-icon"><i class="fas fa-industry"></i></div>
                         <div>
-                            <strong>Premium Content</strong>
-                            <span>Access to top global publications</span>
+                            <strong>Direct Manufacturer Access</strong>
+                            <span>Source directly from verified global suppliers</span>
                         </div>
                     </div>
                     <div class="global-feature-item">
-                        <div class="global-feature-icon"><i class="fas fa-globe"></i></div>
+                        <div class="global-feature-icon"><i class="fas fa-handshake"></i></div>
                         <div>
-                            <strong>Worldwide Access</strong>
-                            <span>Newspapers, magazines &amp; more</span>
+                            <strong>Secure Trade Assurance</strong>
+                            <span>Full protection on all international orders</span>
                         </div>
                     </div>
                 </div>
@@ -404,6 +633,221 @@
                     <span>Browse Marketplace</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- E-Contents Section -->
+    <section id="econtents" class="section econtents-section">
+        <div class="container econtents-layout">
+            <!-- Left: Content -->
+            <div class="econtents-content reveal">
+                <div class="section-eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    <span>E-Contents</span>
+                </div>
+                <h2 class="section-title econtents-title">
+                    Read the <span class="econtents-highlight">World</span><br>Anytime, Anywhere
+                </h2>
+                <p class="section-text">Access thousands of premium newspapers, magazines, academic journals, and digital books from around the globe. Your personal library, always in your pocket.</p>
+                <div class="econtents-features">
+                    <div class="econtents-feature-item">
+                        <div class="econtents-feature-icon"><i class="fas fa-newspaper"></i></div>
+                        <div>
+                            <strong>Global Publications</strong>
+                            <span>Top newspapers &amp; magazines worldwide</span>
+                        </div>
+                    </div>
+                    <div class="econtents-feature-item">
+                        <div class="econtents-feature-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div>
+                            <strong>Academic Resources</strong>
+                            <span>Journals, textbooks &amp; research papers</span>
+                        </div>
+                    </div>
+                    <div class="econtents-feature-item">
+                        <div class="econtents-feature-icon"><i class="fas fa-tablet-screen-button"></i></div>
+                        <div>
+                            <strong>Offline Reading</strong>
+                            <span>Download and read without internet</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn econtents-cta-btn">
+                    Explore E-Contents <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <!-- Right: SVG -->
+            <div class="econtents-visual reveal">
+                <div class="econtents-image-wrap">
+                <svg viewBox="0 0 480 400" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" aria-label="E-reader digital library illustration">
+                    <defs>
+                        <linearGradient id="tabletGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#1A1A26"/>
+                            <stop offset="100%" stop-color="#0A0A0F"/>
+                        </linearGradient>
+                        <radialGradient id="eGlow" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="rgba(255,255,255,0.06)"/>
+                            <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+                        </radialGradient>
+                    </defs>
+                    <!-- Background glow -->
+                    <circle cx="240" cy="200" r="180" fill="url(#eGlow)"/>
+                    <!-- Tablet frame -->
+                    <rect x="80" y="40" width="320" height="320" rx="20" fill="url(#tabletGrad)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+                    <!-- Screen bezel -->
+                    <rect x="96" y="60" width="288" height="280" rx="8" fill="#0A0A0F"/>
+                    <!-- Home button -->
+                    <circle cx="240" cy="348" r="8" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                    <!-- Screen content: header bar -->
+                    <rect x="96" y="60" width="288" height="36" rx="8" fill="rgba(255,255,255,0.05)"/>
+                    <text x="116" y="83" font-family="Inter,sans-serif" font-size="11" fill="rgba(255,255,255,0.8)" font-weight="700">My Library</text>
+                    <circle cx="364" cy="78" r="10" fill="rgba(255,255,255,0.08)"/>
+                    <text x="364" y="82" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.6)">3</text>
+                    <!-- Book covers row 1 -->
+                    <rect x="108" y="108" width="60" height="80" rx="6" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+                    <rect x="110" y="110" width="56" height="4" rx="2" fill="rgba(255,107,0,0.6)"/>
+                    <text x="138" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">Finance</text>
+                    <rect x="178" y="108" width="60" height="80" rx="6" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+                    <rect x="180" y="110" width="56" height="4" rx="2" fill="rgba(255,255,255,0.4)"/>
+                    <text x="208" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">Business</text>
+                    <rect x="248" y="108" width="60" height="80" rx="6" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+                    <rect x="250" y="110" width="56" height="4" rx="2" fill="rgba(255,255,255,0.3)"/>
+                    <text x="278" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">Tech</text>
+                    <rect x="318" y="108" width="54" height="80" rx="6" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+                    <rect x="320" y="110" width="50" height="4" rx="2" fill="rgba(255,107,0,0.4)"/>
+                    <text x="345" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="rgba(255,255,255,0.5)">News</text>
+                    <!-- Currently reading card -->
+                    <rect x="108" y="202" width="264" height="70" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                    <text x="124" y="222" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.45)" font-weight="500">CURRENTLY READING</text>
+                    <text x="124" y="240" font-family="Inter,sans-serif" font-size="12" fill="#ffffff" font-weight="700">The Economist</text>
+                    <text x="124" y="256" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.45)">Global Edition — April 2026</text>
+                    <!-- Progress bar -->
+                    <rect x="108" y="284" width="264" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+                    <rect x="108" y="284" width="158" height="6" rx="3" fill="#FF6B00"/>
+                    <text x="108" y="302" font-family="Inter,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)">60% complete</text>
+                    <text x="372" y="302" text-anchor="end" font-family="Inter,sans-serif" font-size="8" fill="rgba(255,255,255,0.4)">7,000+ titles</text>
+                    <!-- Decorative dots -->
+                    <circle cx="420" cy="100" r="3" fill="rgba(255,107,0,0.4)"/>
+                    <circle cx="60" cy="300" r="3" fill="rgba(255,107,0,0.3)"/>
+                    <circle cx="440" cy="280" r="2" fill="rgba(255,255,255,0.2)"/>
+                </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Airport Bookings Section -->
+    <section id="airports" class="section airports-section">
+        <div class="container airports-layout">
+            <!-- Left: Content -->
+            <div class="airports-content reveal">
+                <div class="section-eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    <span>Airport Bookings</span>
+                </div>
+                <h2 class="section-title airports-title">
+                    Book Flights &amp;<br><span class="airports-highlight">Airport Services</span><br>Seamlessly
+                </h2>
+                <p class="section-text">Search, compare, and book flights to destinations worldwide. From airport transfers to lounge access, Rytelink makes every journey smooth and stress-free.</p>
+                <div class="airports-features">
+                    <div class="airports-feature-item">
+                        <div class="airports-feature-icon"><i class="fas fa-plane-departure"></i></div>
+                        <div>
+                            <strong>Flight Booking</strong>
+                            <span>Search &amp; book flights to 190+ countries</span>
+                        </div>
+                    </div>
+                    <div class="airports-feature-item">
+                        <div class="airports-feature-icon"><i class="fas fa-car"></i></div>
+                        <div>
+                            <strong>Airport Transfers</strong>
+                            <span>Pre-book rides to and from any airport</span>
+                        </div>
+                    </div>
+                    <div class="airports-feature-item">
+                        <div class="airports-feature-icon"><i class="fas fa-couch"></i></div>
+                        <div>
+                            <strong>Lounge Access</strong>
+                            <span>Relax in premium airport lounges worldwide</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn airports-cta-btn">
+                    Book a Flight <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <!-- Right: SVG -->
+            <div class="airports-visual reveal">
+                <div class="airports-image-wrap">
+                <svg viewBox="0 0 480 400" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" aria-label="Airport flight booking illustration">
+                    <defs>
+                        <linearGradient id="boardingGrad" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#1A1A26"/>
+                            <stop offset="100%" stop-color="#0A0A0F"/>
+                        </linearGradient>
+                        <radialGradient id="airGlow" cx="50%" cy="40%" r="55%">
+                            <stop offset="0%" stop-color="rgba(255,255,255,0.05)"/>
+                            <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+                        </radialGradient>
+                    </defs>
+                    <!-- Background glow -->
+                    <circle cx="240" cy="180" r="200" fill="url(#airGlow)"/>
+                    <!-- Flight path arc -->
+                    <path d="M 60 300 Q 240 60 420 300" stroke="rgba(255,107,0,0.2)" stroke-width="1.5" fill="none" stroke-dasharray="6,4"/>
+                    <path d="M 80 310 Q 240 80 400 310" stroke="rgba(255,255,255,0.06)" stroke-width="1" fill="none"/>
+                    <!-- Plane silhouette -->
+                    <g transform="translate(220, 140) rotate(-20)">
+                        <path d="M 0 0 L 30 -8 L 40 0 L 30 8 Z" fill="#ffffff" opacity="0.9"/>
+                        <path d="M 10 -2 L 20 -18 L 25 -18 L 18 -2 Z" fill="#ffffff" opacity="0.7"/>
+                        <path d="M 10 2 L 20 18 L 25 18 L 18 2 Z" fill="#ffffff" opacity="0.7"/>
+                        <path d="M 28 -1 L 34 -6 L 36 -6 L 32 -1 Z" fill="#ffffff" opacity="0.6"/>
+                        <path d="M 28 1 L 34 6 L 36 6 L 32 1 Z" fill="#ffffff" opacity="0.6"/>
+                    </g>
+                    <!-- Departure marker -->
+                    <circle cx="60" cy="300" r="8" fill="#FF6B00"/>
+                    <circle cx="60" cy="300" r="14" fill="none" stroke="rgba(255,107,0,0.3)" stroke-width="1.5"/>
+                    <text x="60" y="325" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.7)" font-weight="600">LOS</text>
+                    <!-- Arrival marker -->
+                    <circle cx="420" cy="300" r="8" fill="#FF6B00"/>
+                    <circle cx="420" cy="300" r="14" fill="none" stroke="rgba(255,107,0,0.3)" stroke-width="1.5"/>
+                    <text x="420" y="325" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.7)" font-weight="600">LHR</text>
+                    <!-- Boarding pass card -->
+                    <rect x="100" y="30" width="280" height="130" rx="14" fill="url(#boardingGrad)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                    <!-- Perforated line -->
+                    <line x1="100" y1="95" x2="380" y2="95" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="4,3"/>
+                    <circle cx="100" cy="95" r="8" fill="#0A0A0F"/>
+                    <circle cx="380" cy="95" r="8" fill="#0A0A0F"/>
+                    <!-- Boarding pass content -->
+                    <text x="120" y="58" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.45)" font-weight="500">BOARDING PASS</text>
+                    <text x="120" y="76" font-family="Inter,sans-serif" font-size="18" fill="#ffffff" font-weight="800">LOS → LHR</text>
+                    <text x="120" y="112" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.45)">PASSENGER</text>
+                    <text x="120" y="128" font-family="Inter,sans-serif" font-size="11" fill="#ffffff" font-weight="600">JOHN ADEYEMI</text>
+                    <text x="280" y="112" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.45)">GATE</text>
+                    <text x="280" y="128" font-family="Inter,sans-serif" font-size="11" fill="#ffffff" font-weight="600">B14</text>
+                    <!-- Barcode lines -->
+                    <rect x="310" y="40" width="2" height="44" fill="rgba(255,255,255,0.6)"/>
+                    <rect x="315" y="40" width="4" height="44" fill="rgba(255,255,255,0.4)"/>
+                    <rect x="322" y="40" width="2" height="44" fill="rgba(255,255,255,0.6)"/>
+                    <rect x="327" y="40" width="3" height="44" fill="rgba(255,255,255,0.5)"/>
+                    <rect x="333" y="40" width="2" height="44" fill="rgba(255,255,255,0.6)"/>
+                    <rect x="338" y="40" width="4" height="44" fill="rgba(255,255,255,0.4)"/>
+                    <rect x="345" y="40" width="2" height="44" fill="rgba(255,255,255,0.6)"/>
+                    <rect x="350" y="40" width="3" height="44" fill="rgba(255,255,255,0.5)"/>
+                    <rect x="356" y="40" width="2" height="44" fill="rgba(255,255,255,0.6)"/>
+                    <!-- Stats row -->
+                    <rect x="100" y="175" width="280" height="60" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                    <text x="150" y="200" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.45)">FLIGHTS</text>
+                    <text x="150" y="218" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" fill="#ffffff" font-weight="700">190+</text>
+                    <line x1="240" y1="182" x2="240" y2="228" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                    <text x="310" y="200" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="rgba(255,255,255,0.45)">COUNTRIES</text>
+                    <text x="310" y="218" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" fill="#ffffff" font-weight="700">50+</text>
+                    <!-- Decorative dots -->
+                    <circle cx="440" cy="60" r="3" fill="rgba(255,107,0,0.4)"/>
+                    <circle cx="40" cy="160" r="3" fill="rgba(255,107,0,0.3)"/>
+                    <circle cx="450" cy="220" r="2" fill="rgba(255,255,255,0.15)"/>
+                </svg>
+                </div>
             </div>
         </div>
     </section>
@@ -442,25 +886,6 @@
                         <h3>24/7 Support</h3>
                         <p>Dedicated in-app support team always ready to resolve any issue instantly.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download CTA -->
-    <section class="section">
-        <div class="container reveal">
-            <div class="download-card" style="text-align: center; background: var(--primary); padding: 80px 40px; border-radius: var(--radius-lg); color: white; box-shadow: 0 30px 60px rgba(13, 96, 216, 0.3); position: relative; overflow: hidden;">
-                <div class="fun-blob" style="top: -20%; right: -10%; background: white; opacity: 0.1;"></div>
-                <h2 class="section-title download-title">Ready to take control?</h2>
-                <p style="margin-bottom: 40px; opacity: 0.9; font-size: 1.2rem;">Download the app today and join thousands growing their wealth.</p>
-                <div class="download-btns" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; position: relative; z-index: 2;">
-                    <a href="#" class="btn" style="background: #000; color: #fff; padding: 15px 30px;">
-                        <i class="fab fa-apple" style="margin-right: 12px; font-size: 1.4rem;"></i> App Store
-                    </a>
-                    <a href="#" class="btn" style="background: #000; color: #fff; padding: 15px 30px;">
-                        <i class="fab fa-google-play" style="margin-right: 12px; font-size: 1.2rem;"></i> Play Store
-                    </a>
                 </div>
             </div>
         </div>
@@ -511,12 +936,32 @@
         </div>
     </section>
 
+    <!-- Download CTA -->
+    <section class="section download-section">
+        <div class="container reveal">
+            <div class="download-card">
+                <h2 class="section-title download-title">Ready to take control?</h2>
+                <p class="download-subtitle">Download the app today and join thousands growing their wealth.</p>
+                <div class="download-btns">
+                    <a href="#" class="btn download-store-btn">
+                        <i class="fab fa-apple"></i> Download on App Store
+                    </a>
+                    <a href="#" class="btn download-store-btn">
+                        <i class="fab fa-google-play"></i> Get on Play Store
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col footer-logo">
-                    <img src="assets/logo-nobg.png" alt="Rytelink Logo">
+                    <img src="assets/logo-mg.png" alt="Rytelink Logo">
                     <p class="footer-about">
                         Rytelink is a financial technology and business development company dedicated to serving your needs and helping you grow.
                     </p>
@@ -550,7 +995,7 @@
                     <ul class="footer-links">
                         <li><a href="tel:+2348025510110"><i class="fas fa-phone"></i> +2348025510110</a></li>
                         <li><a href="mailto:info@rytelink.com"><i class="fas fa-envelope"></i> info@rytelink.com</a></li>
-                        <li><p style="color: var(--text-muted);"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p></li>
+                        <li><span style="color: var(--text-muted-dark); font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem;"><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</span></li>
                     </ul>
                 </div>
             </div>
@@ -563,3 +1008,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
