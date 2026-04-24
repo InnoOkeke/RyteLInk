@@ -37,7 +37,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-light);
     background-color: var(--bg-light-grey);
@@ -49,15 +49,18 @@ body {
    TYPOGRAPHY
    ================== */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 800;
-    line-height: 1.1;
     letter-spacing: -0.03em;
 }
 
-h1 { font-size: clamp(3rem, 5vw, 4.5rem); }
-h2 { font-size: clamp(2.5rem, 4vw, 3.5rem); margin-bottom: 1.5rem; }
-h3 { font-size: 1.5rem; margin-bottom: 1rem; }
-p { font-size: 1.125rem; margin-bottom: 1.5rem; color: var(--text-muted-light); }
+h1 { font-size: clamp(32px, 5vw, 56px); font-weight: 700; line-height: 1.1; margin-bottom: 1.5rem; }
+h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 600; line-height: 1.2; margin-bottom: 1.5rem; }
+h3 { font-size: clamp(22px, 3vw, 28px); font-weight: 600; line-height: 1.3; margin-bottom: 1rem; }
+h4 { font-size: clamp(18px, 2.5vw, 22px); font-weight: 500; line-height: 1.4; margin-bottom: 1rem; }
+p { font-size: 16px; font-weight: 400; line-height: 1.6; margin-bottom: 1.5rem; color: var(--text-muted-light); }
+
+.text-lg { font-size: 18px; font-weight: 400; line-height: 1.6; }
+.text-sm { font-size: 14px; font-weight: 400; line-height: 1.5; }
+.text-caption { font-size: 12px; font-weight: 400; line-height: 1.4; }
 a { text-decoration: none; color: inherit; transition: var(--transition); }
 
 .section-text { font-size: 1.125rem; max-width: 600px; }
@@ -71,6 +74,11 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.25rem;
+    }
 }
 
 .section {
@@ -149,14 +157,22 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 }
 
 .btn-hero-outline {
-    background-color: transparent;
+    background-color: #0A0A0A;
     color: #FFFFFF;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid var(--accent);
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: left;
+}
+.btn-hero-outline i {
+    font-size: 1.5rem;
 }
 .btn-hero-outline:hover {
     background-color: rgba(255, 107, 0, 0.1);
-    border-color: var(--accent);
-    color: var(--accent);
+    box-shadow: 0 5px 15px rgba(255, 107, 0, 0.2);
 }
 
 /* Black buttons for light grey sections */
@@ -200,6 +216,7 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 
 .logo img {
     height: 35px;
+    margin-left: -8px;
     filter: brightness(0) invert(1); /* Logo white on dark background */
 }
 
@@ -242,7 +259,9 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
     border: none;
     cursor: pointer;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
+    padding: 5px;
+    margin-right: -5px;
 }
 
 .nav-hamburger span {
@@ -260,11 +279,12 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
     left: 0;
     width: 100%;
     background-color: var(--bg-dark);
-    padding: 2rem;
+    padding: 1.5rem;
     border-bottom: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
 
-.nav-mobile.active {
+.nav-mobile.active, .nav-mobile.open {
     display: block;
 }
 
@@ -272,7 +292,7 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .nav-mobile ul li a {
@@ -726,14 +746,23 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
     flex-wrap: wrap;
 }
 .download-store-btn {
-    background-color: #FFFFFF;
-    color: #000000;
-    padding: 0.75rem 1.5rem;
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    border: 1px solid var(--accent);
+    padding: 0.5rem 1.25rem;
     font-size: 1rem;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: left;
+}
+.download-store-btn i {
+    font-size: 1.5rem;
 }
 .download-store-btn:hover {
-    background-color: #f0f0f0;
-    box-shadow: 0 10px 20px rgba(255,255,255,0.1);
+    background-color: rgba(255, 107, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(255, 107, 0, 0.2);
 }
 
 @media (max-width: 768px) {
